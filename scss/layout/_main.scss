@@ -1,0 +1,38 @@
+@use "../utilidades/variables";
+@use "../utilidades/mixin";
+
+.main-principal {
+    max-width: 1000px;
+    margin: 0 auto;
+    .inicio-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min(500px, 100%), 1fr));
+        
+        .inicio-text {
+            @include mixin.flex-direction-column;
+            justify-content: center;
+            gap: 3rem;
+            .text-redes {
+                a {
+                    padding: 20px;
+                    background-color: variables.$color-2;
+                    border: 1px solid #9d9d9d;
+                    border-radius: 40px;
+                }
+            }
+        }
+
+        .img-inicio {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            width: 400px;
+            margin: 0 auto;
+            img {
+                @include mixin.img-responsiva;
+                border-radius: 50%;
+            }
+        }
+    }
+}

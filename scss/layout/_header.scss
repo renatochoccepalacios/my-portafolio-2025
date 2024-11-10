@@ -2,8 +2,43 @@
 
 .header-principal {
     nav {
+        background-color: variables.$color-1;
+        color: #fff;
         div {
+            a {
+
+            }
             
+            button {
+                font-size: 2.5rem;
+                color: variables.$color-white;
+            }
+
+            div {
+                ul {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    li {
+                        display: flex;
+                        gap: 2rem;
+                        .nav-link {
+                            text-transform: uppercase;
+                            letter-spacing: 2px;
+                            color: variables.$color-white;
+                            &.active {
+                                color: variables.$color-active;
+                            }
+                        }
+                        
+                        
+                    }
+                }
+
+            }
+
+           
         }
     }
 }

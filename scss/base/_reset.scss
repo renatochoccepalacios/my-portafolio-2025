@@ -1,0 +1,60 @@
+@use "../utilidades/variables";
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+// Reset SCSS para un punto de partida limpio
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-size: 100%;
+    font-family: "Funnel Sans", serif;
+    
+    line-height: 1.5;
+    background-color: variables.$color-1;
+    color: #fff;
+    text-rendering: optimizeLegibility;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+button, input, select, textarea {
+    font: inherit;
+    color: inherit;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;  // Reseteo de márgenes para listas
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, figure {
+    margin: 0;  // Reseteo de márgenes para encabezados y párrafos
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}

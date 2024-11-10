@@ -1,3 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html, body {
+  height: 100%;
+  font-size: 100%;
+  font-family: "Funnel Sans", serif;
+  line-height: 1.5;
+  background-color: #0b193c;
+  color: #fff;
+  text-rendering: optimizeLegibility;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, figure {
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-principal nav {
+  background-color: #0b193c;
+  color: #fff;
+}
+.header-principal nav div button {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.header-principal nav div div ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-principal nav div div ul li {
+  display: flex;
+  gap: 2rem;
+}
+.header-principal nav div div ul li .nav-link {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.header-principal nav div div ul li .nav-link.active {
+  color: #c3c3c3;
+}
+
+.main-principal {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.main-principal .inicio-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(500px, 100%), 1fr));
+}
+.main-principal .inicio-section .inicio-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+.main-principal .inicio-section .inicio-text .text-redes a {
+  padding: 20px;
+  background-color: #1e1e73;
+  border: 1px solid #9d9d9d;
+  border-radius: 40px;
+}
+.main-principal .inicio-section .img-inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+}
+.main-principal .inicio-section .img-inicio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
 
 /*# sourceMappingURL=style.css.map */
