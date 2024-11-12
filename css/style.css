@@ -13,7 +13,7 @@ html, body {
   font-family: "Funnel Sans", serif;
   line-height: 1.5;
   background-color: #0b193c;
-  color: #fff;
+  color: #C5C8D0;
   text-rendering: optimizeLegibility;
 }
 
@@ -57,10 +57,17 @@ fieldset {
 
 .header-principal nav {
   background-color: #0b193c;
+  max-width: 1200px;
+  margin: 0 auto;
   color: #fff;
 }
-.header-principal nav div button {
-  font-size: 2.5rem;
+.header-principal nav div {
+  padding: 0 2rem;
+}
+.header-principal nav div .logo-a {
+  color: #fff;
+}
+.header-principal nav div .button-toggle {
   color: #fff;
 }
 .header-principal nav div div ul {
@@ -81,6 +88,12 @@ fieldset {
 .header-principal nav div div ul li .nav-link.active {
   color: #c3c3c3;
 }
+.header-principal nav div div ul li .button-cv {
+  display: flex;
+}
+.header-principal nav div .button-cv {
+  display: none;
+}
 
 .main-principal {
   max-width: 1200px;
@@ -90,6 +103,7 @@ fieldset {
 .main-principal .inicio-section {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(500px, 100%), 1fr));
+  gap: 2rem;
 }
 .main-principal .inicio-section .inicio-text {
   display: flex;
@@ -97,11 +111,30 @@ fieldset {
   justify-content: center;
   gap: 3rem;
 }
+.main-principal .inicio-section .inicio-text h1 {
+  color: #fff;
+}
+.main-principal .inicio-section .inicio-text h2 {
+  font-size: 1.25rem;
+}
+.main-principal .inicio-section .inicio-text .text-redes {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
 .main-principal .inicio-section .inicio-text .text-redes a {
-  padding: 20px;
-  background-color: #1e1e73;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #172340;
   border: 1px solid #9d9d9d;
-  border-radius: 40px;
+  border-radius: 2rem;
+  color: #fff;
+}
+.main-principal .inicio-section .inicio-text .text-redes a i {
+  font-size: 1.2rem;
 }
 .main-principal .inicio-section .img-inicio {
   display: flex;
@@ -116,6 +149,17 @@ fieldset {
   height: auto;
   object-fit: cover;
   border-radius: 50%;
+}
+
+@media screen and (min-width: 992px) {
+  .header-principal nav div div ul li .button-cv {
+    display: none;
+  }
+  .header-principal nav div .button-cv {
+    display: flex;
+    padding: 20px;
+    border: 1px solid;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

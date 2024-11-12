@@ -3,14 +3,18 @@
 .header-principal {
     nav {
         background-color: variables.$color-1;
+        max-width: 1200px;
+        margin: 0 auto;
         color: #fff;
-        div {
-            a {
 
+        div {
+            padding: 0 2rem;
+
+            .logo-a {
+                color: variables.$color-white;
             }
-            
-            button {
-                font-size: 2.5rem;
+
+            .button-toggle {
                 color: variables.$color-white;
             }
 
@@ -20,25 +24,32 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+
                     li {
                         display: flex;
                         gap: 2rem;
+
                         .nav-link {
                             text-transform: uppercase;
                             letter-spacing: 2px;
                             color: variables.$color-white;
+
                             &.active {
                                 color: variables.$color-active;
                             }
                         }
-                        
-                        
+                        .button-cv {
+                            display: flex;
+                        }
+
                     }
                 }
 
             }
 
-           
+            .button-cv {
+                display: none;
+            }
         }
     }
 }
