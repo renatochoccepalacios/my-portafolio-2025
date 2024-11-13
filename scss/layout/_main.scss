@@ -3,7 +3,8 @@
 
 .main-principal {
     max-width: 1200px;
-    padding: 8rem 2rem 8rem 2rem;
+    padding: 10rem 2rem 8rem 2rem;
+
     margin: 0 auto;
 
     .inicio-section {
@@ -65,77 +66,85 @@
 
     .habilidades-section {
         display: grid;
+        padding: 5rem 0;
         gap: 2.7rem;
 
         .habilidades-title {}
 
-        .habilidades-lenguajes {
-            @include mixin.flex-direction-column;
-            gap: 1.7rem;
-            padding: 2rem 2.5rem;
-            background-color: variables.$color-3;
-            border: 1px solid #ffffff1a;
+        .habilidades-contenedor {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
+            gap: 2rem;
+            .habilidades-lenguajes {
+                @include mixin.flex-direction-column;
+                gap: 1.7rem;
+                padding: 2rem 2.5rem;
+                background-color: variables.$color-3;
+                border: 1px solid #ffffff1a;
 
-            h3 {}
+                h3 {}
 
-            .habilidades-lenguajes-lista {
-                display: flex;
-                gap: 2rem;
-                
-                .habilidad-item {
+                .habilidades-lenguajes-lista {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 2rem;
 
-                    padding: 0.4rem 0.90rem;
-                    border-radius: 0.25rem;
-                    text-transform: uppercase;
+                    .habilidad-item {
 
-                    &.color-html {
+                        padding: 0.4rem 0.90rem;
+                        border-radius: 0.25rem;
+                        text-transform: uppercase;
 
-                        background-color: #E34F26;
-                    }
+                        &.color-html {
 
-                    &.color-css {
+                            background-color: #E34F26;
+                        }
 
-                        background-color: #1572B6;
-                    }
+                        &.color-css {
 
-                    &.color-sass {
+                            background-color: #1572B6;
+                        }
 
-                        background-color: #CF649A;
-                    }
+                        &.color-sass {
 
-                    &.color-bootstrap {
+                            background-color: #CF649A;
+                        }
 
-                        background-color: #7952B3;
-                    }
+                        &.color-bootstrap {
 
-                    &.color-js {
-                        background-color: #988810;
-                    }
+                            background-color: #7952B3;
+                        }
 
-                    &.color-php {
+                        &.color-js {
+                            background-color: #988810;
+                        }
 
-                        background-color: #4F5B93;
-                    }
+                        &.color-php {
 
-                    &.color-mysql {
+                            background-color: #4F5B93;
+                        }
 
-                        background-color: #00758F;
-                    }
+                        &.color-mysql {
 
-                    &.habilidad-trabajo {
-                        background-color: #197d42;
-                    }
+                            background-color: #00758F;
+                        }
 
-                    &.habilidad-puntualidad {
-                        background-color: #4A6C89;
-                    }
+                        &.habilidad-trabajo {
+                            background-color: #197d42;
+                        }
 
-                    
-                    &.habilidad-autodidacta {
-                        background-color: #E67E22;
-                    }
-                    &.habilidad-responsabilidad {
-                        background-color: #6A7F7A;
+                        &.habilidad-puntualidad {
+                            background-color: #4A6C89;
+                        }
+
+
+                        &.habilidad-autodidacta {
+                            background-color: #E67E22;
+                        }
+
+                        &.habilidad-responsabilidad {
+                            background-color: #6A7F7A;
+                        }
                     }
                 }
             }

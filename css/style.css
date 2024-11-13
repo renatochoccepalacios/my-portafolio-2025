@@ -58,12 +58,12 @@ fieldset {
 
 .header-principal nav {
   background-color: #0b193c;
-  max-width: 1200px;
   margin: 0 auto;
   color: #fff;
 }
 .header-principal nav div {
   padding: 0 2rem;
+  max-width: 1200px;
 }
 .header-principal nav div .logo-a {
   color: #fff;
@@ -98,7 +98,7 @@ fieldset {
 
 .main-principal {
   max-width: 1200px;
-  padding: 8rem 2rem 8rem 2rem;
+  padding: 10rem 2rem 8rem 2rem;
   margin: 0 auto;
 }
 .main-principal .inicio-section {
@@ -153,9 +153,15 @@ fieldset {
 }
 .main-principal .habilidades-section {
   display: grid;
+  padding: 5rem 0;
   gap: 2.7rem;
 }
-.main-principal .habilidades-section .habilidades-lenguajes {
+.main-principal .habilidades-section .habilidades-contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
+  gap: 2rem;
+}
+.main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes {
   display: flex;
   flex-direction: column;
   gap: 1.7rem;
@@ -163,46 +169,47 @@ fieldset {
   background-color: #172340;
   border: 1px solid rgba(255, 255, 255, 0.1019607843);
 }
-.main-principal .habilidades-section .habilidades-lenguajes .habilidades-lenguajes-lista {
+.main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista {
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
 }
-.main-principal .habilidades-section .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item {
+.main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item {
   padding: 0.4rem 0.9rem;
   border-radius: 0.25rem;
   text-transform: uppercase;
 }
-.main-principal .habilidades-section .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.color-html {
+.main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.color-html {
   background-color: #E34F26;
 }
-.main-principal .habilidades-section .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.color-css {
+.main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.color-css {
   background-color: #1572B6;
 }
-.main-principal .habilidades-section .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.color-sass {
+.main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.color-sass {
   background-color: #CF649A;
 }
-.main-principal .habilidades-section .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.color-bootstrap {
+.main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.color-bootstrap {
   background-color: #7952B3;
 }
-.main-principal .habilidades-section .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.color-js {
+.main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.color-js {
   background-color: #988810;
 }
-.main-principal .habilidades-section .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.color-php {
+.main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.color-php {
   background-color: #4F5B93;
 }
-.main-principal .habilidades-section .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.color-mysql {
+.main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.color-mysql {
   background-color: #00758F;
 }
-.main-principal .habilidades-section .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.habilidad-trabajo {
+.main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.habilidad-trabajo {
   background-color: #197d42;
 }
-.main-principal .habilidades-section .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.habilidad-puntualidad {
+.main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.habilidad-puntualidad {
   background-color: #4A6C89;
 }
-.main-principal .habilidades-section .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.habilidad-autodidacta {
+.main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.habilidad-autodidacta {
   background-color: #E67E22;
 }
-.main-principal .habilidades-section .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.habilidad-responsabilidad {
+.main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.habilidad-responsabilidad {
   background-color: #6A7F7A;
 }
 

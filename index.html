@@ -12,8 +12,8 @@
 </head>
 
 <body>
-    <header class="header-principal position-fixed">
-        <nav class="navbar navbar-expand-lg">
+    <header class="header-principal">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand logo-a" href="#">Renato</a>
                 <button class="navbar-toggler button-toggle" type="button" data-bs-toggle="collapse"
@@ -27,10 +27,10 @@
                             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Habilidades</a>
+                            <a class="nav-link" href="#habilidades">Habilidades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Proyectos</a>
+                            <a class="nav-link" href="#proyectos">Proyectos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">sobre mi</a>
@@ -46,7 +46,7 @@
         </nav>
     </header>
 
-    <main class="main-principal">
+    <main class="main-principal" id="inicio">
         <section class="inicio-section">
             <div class="inicio-text">
                 <h1>¡Hola👋🏻! Soy Renato</h1>
@@ -63,31 +63,33 @@
             </figure>
         </section>
 
-        <section class="habilidades-section">
+        <section class="habilidades-section" id="habilidades">
             <h2 class="habilidades-title"><i class="bi bi-code-slash"></i> Habilidades</h2>
-            <div class="habilidades-lenguajes">
-                <h3>lenguajes y frameworks</h3>
-                <ul class="habilidades-lenguajes-lista">
-                    <li class="habilidad-item color-html">html</li>
-                    <li class="habilidad-item color-css">css</li>
-                    <li class="habilidad-item color-sass">sass</li>
-                    <li class="habilidad-item color-bootstrap">bootstrap</li>
-                    <li class="habilidad-item color-js">javascript</li>
-                    <li class="habilidad-item color-php">php</li>
-                    <li class="habilidad-item color-mysql">MySql</li>
-                </ul>
-            </div>
-            <div class="habilidades-lenguajes">
-                <h3>Personales</h3>
-                <ul class="habilidades-lenguajes-lista">
-                    <li class="habilidad-item habilidad-trabajo">Trabajo en equipo</li>
-                    <li class="habilidad-item habilidad-puntualidad">puntualidad</li>
-                    <li class="habilidad-item habilidad-autodidacta">autodidacta</li>
-                    <li class="habilidad-item habilidad-responsabilidad">responsabilidad</li>
-                </ul>
-            </div>
+            <article class="habilidades-contenedor">
+                <div class="habilidades-lenguajes">
+                    <h3>lenguajes y frameworks</h3>
+                    <ul class="habilidades-lenguajes-lista">
+                        <li class="habilidad-item color-html">html</li>
+                        <li class="habilidad-item color-css">css</li>
+                        <li class="habilidad-item color-sass">sass</li>
+                        <li class="habilidad-item color-bootstrap">bootstrap</li>
+                        <li class="habilidad-item color-js">javascript</li>
+                        <li class="habilidad-item color-php">php</li>
+                        <li class="habilidad-item color-mysql">MySql</li>
+                    </ul>
+                </div>
+                <div class="habilidades-lenguajes">
+                    <h3>Personales</h3>
+                    <ul class="habilidades-lenguajes-lista">
+                        <li class="habilidad-item habilidad-trabajo">Trabajo en equipo</li>
+                        <li class="habilidad-item habilidad-puntualidad">puntualidad</li>
+                        <li class="habilidad-item habilidad-autodidacta">autodidacta</li>
+                        <li class="habilidad-item habilidad-responsabilidad">responsabilidad</li>
+                    </ul>
+                </div>
+            </article>
         </section>
-        <section class="proyectos-section">
+        <section class="proyectos-section" id="proyectos">
             <h2>Proyectos</h2>
             <article>
                 <img src="" alt="">

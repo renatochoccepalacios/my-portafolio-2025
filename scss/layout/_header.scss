@@ -3,12 +3,12 @@
 .header-principal {
     nav {
         background-color: variables.$color-1;
-        max-width: 1200px;
         margin: 0 auto;
         color: #fff;
 
         div {
             padding: 0 2rem;
+            max-width: 1200px;
 
             .logo-a {
                 color: variables.$color-white;
