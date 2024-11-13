@@ -54,4 +54,29 @@
             }
         }
     }
+
+    .habilidades-section {
+        .habilidades-item {
+            .habilidades-title {
+
+            }
+
+            .habilidades-lenguajes {
+                padding: 2rem 4rem;
+                background-color: variables.$color-3;
+                border: 1px solid #ffffff1a;
+                h3 {
+
+                }
+
+                .habilidades-lenguajes-lista {
+                    display: flex;
+                    gap: 2rem;
+                    .lenguajes-item {
+
+                    }
+                }
+            }
+        }
+    }
 }

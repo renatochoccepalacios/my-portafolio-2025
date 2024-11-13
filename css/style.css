@@ -37,6 +37,7 @@ a {
 
 ul, ol {
   list-style: none;
+  padding: 0;
   margin: 0;
 }
 
@@ -150,14 +151,22 @@ fieldset {
   object-fit: cover;
   border-radius: 50%;
 }
-
+.main-principal .habilidades-section .habilidades-item .habilidades-lenguajes {
+  padding: 2rem 4rem;
+  background-color: #172340;
+  border: 1px solid rgba(255, 255, 255, 0.1019607843);
+}
+.main-principal .habilidades-section .habilidades-item .habilidades-lenguajes .habilidades-lenguajes-lista {
+  display: flex;
+  gap: 2rem;
+}
 @media screen and (min-width: 992px) {
   .header-principal nav div div ul li .button-cv {
     display: none;
   }
   .header-principal nav div .button-cv {
     display: flex;
-    padding: 20px;
+    padding: 0.7rem 0.8rem;
     border: 1px solid;
   }
 }
