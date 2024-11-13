@@ -5,35 +5,42 @@
     max-width: 1200px;
     padding: 8rem 2rem 8rem 2rem;
     margin: 0 auto;
+
     .inicio-section {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(min(500px, 100%), 1fr));
         gap: 2rem;
+
         .inicio-text {
             @include mixin.flex-direction-column;
             justify-content: center;
             gap: 3rem;
+
             h1 {
                 color: variables.$color-white;
 
             }
+
             h2 {
                 font-size: 1.25rem;
             }
+
             .text-redes {
                 display: flex;
                 gap: 1rem;
                 flex-wrap: wrap;
+
                 a {
                     display: flex;
                     align-items: center;
                     gap: 5px;
-                    padding: 0.5rem 1rem 0.5rem  1rem;
+                    padding: 0.5rem 1rem 0.5rem 1rem;
                     font-size: 1rem;
                     background-color: variables.$color-3;
                     border: 1px solid #9d9d9d;
                     border-radius: 2rem;
                     color: variables.$color-white;
+
                     i {
                         font-size: 1.2rem;
                     }
@@ -48,6 +55,7 @@
             width: 100%;
             max-width: 400px;
             margin: 0 auto;
+
             img {
                 @include mixin.img-responsiva;
                 border-radius: 50%;
@@ -56,24 +64,78 @@
     }
 
     .habilidades-section {
-        .habilidades-item {
-            .habilidades-title {
+        display: grid;
+        gap: 2.7rem;
 
-            }
+        .habilidades-title {}
 
-            .habilidades-lenguajes {
-                padding: 2rem 4rem;
-                background-color: variables.$color-3;
-                border: 1px solid #ffffff1a;
-                h3 {
+        .habilidades-lenguajes {
+            @include mixin.flex-direction-column;
+            gap: 1.7rem;
+            padding: 2rem 2.5rem;
+            background-color: variables.$color-3;
+            border: 1px solid #ffffff1a;
 
-                }
+            h3 {}
 
-                .habilidades-lenguajes-lista {
-                    display: flex;
-                    gap: 2rem;
-                    .lenguajes-item {
+            .habilidades-lenguajes-lista {
+                display: flex;
+                gap: 2rem;
+                
+                .habilidad-item {
 
+                    padding: 0.4rem 0.90rem;
+                    border-radius: 0.25rem;
+                    text-transform: uppercase;
+
+                    &.color-html {
+
+                        background-color: #E34F26;
+                    }
+
+                    &.color-css {
+
+                        background-color: #1572B6;
+                    }
+
+                    &.color-sass {
+
+                        background-color: #CF649A;
+                    }
+
+                    &.color-bootstrap {
+
+                        background-color: #7952B3;
+                    }
+
+                    &.color-js {
+                        background-color: #988810;
+                    }
+
+                    &.color-php {
+
+                        background-color: #4F5B93;
+                    }
+
+                    &.color-mysql {
+
+                        background-color: #00758F;
+                    }
+
+                    &.habilidad-trabajo {
+                        background-color: #197d42;
+                    }
+
+                    &.habilidad-puntualidad {
+                        background-color: #4A6C89;
+                    }
+
+                    
+                    &.habilidad-autodidacta {
+                        background-color: #E67E22;
+                    }
+                    &.habilidad-responsabilidad {
+                        background-color: #6A7F7A;
                     }
                 }
             }
