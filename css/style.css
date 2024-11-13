@@ -167,7 +167,7 @@ fieldset {
 }
 .main-principal .habilidades-section .habilidades-contenedor {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
   gap: 2rem;
 }
 .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes {
@@ -216,7 +216,6 @@ fieldset {
   background-color: #00758F;
 }
 .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.habilidad-trabajo {
-  color: #fff;
   background-color: #512DA8;
 }
 .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.habilidad-puntualidad {

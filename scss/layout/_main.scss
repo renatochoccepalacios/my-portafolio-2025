@@ -76,8 +76,9 @@
 
         .habilidades-contenedor {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
             gap: 2rem;
+
             .habilidades-lenguajes {
                 @include mixin.flex-direction-column;
                 gap: 1.7rem;
@@ -86,8 +87,7 @@
                 border: 1px solid #ffffff1a;
                 border-radius: 0.75rem;
 
-                h3 {
-                }
+                h3 {}
 
                 .habilidades-lenguajes-lista {
                     display: flex;
@@ -131,24 +131,20 @@
                         }
 
                         &.color-php {
-
                             background-color: #4F5B93;
                         }
 
                         &.color-mysql {
-
                             background-color: #00758F;
                         }
 
                         &.habilidad-trabajo {
-                            color: #fff;
                             background-color: #512DA8;
                         }
 
                         &.habilidad-puntualidad {
                             background-color: #4A6C89;
                         }
-
 
                         &.habilidad-autodidacta {
                             background-color: #E67E22;
