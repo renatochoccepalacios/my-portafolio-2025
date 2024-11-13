@@ -61,39 +61,45 @@ fieldset {
   margin: 0 auto;
   color: #fff;
 }
-.header-principal nav div {
+.header-principal nav .nav-container {
   padding: 0 2rem;
+}
+.header-principal nav .nav-container .button-toggle {
+  color: #fff;
+}
+.header-principal nav .nav-container .logo-a {
+  color: #fff;
+}
+.header-principal nav .nav-container div {
   max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
-.header-principal nav div .logo-a {
+.header-principal nav .nav-container div .logo-a {
   color: #fff;
+  display: none;
 }
-.header-principal nav div .button-toggle {
-  color: #fff;
-}
-.header-principal nav div div ul {
+.header-principal nav .nav-container div ul {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.header-principal nav div div ul li {
+.header-principal nav .nav-container div ul li {
   display: flex;
   gap: 2rem;
 }
-.header-principal nav div div ul li .nav-link {
+.header-principal nav .nav-container div ul li .nav-link {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #fff;
 }
-.header-principal nav div div ul li .nav-link.active {
+.header-principal nav .nav-container div ul li .nav-link.active {
   color: #c3c3c3;
 }
-.header-principal nav div div ul li .button-cv {
+.header-principal nav .nav-container .button-cv {
   display: flex;
-}
-.header-principal nav div .button-cv {
-  display: none;
+  color: #fff;
 }
 
 .main-principal {
@@ -201,7 +207,8 @@ fieldset {
   background-color: #00758F;
 }
 .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.habilidad-trabajo {
-  background-color: #197d42;
+  color: #fff;
+  background-color: #512DA8;
 }
 .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.habilidad-puntualidad {
   background-color: #4A6C89;
@@ -214,13 +221,14 @@ fieldset {
 }
 
 @media screen and (min-width: 992px) {
-  .header-principal nav div div ul li .button-cv {
+  .header-principal nav .nav-container .logo-a {
     display: none;
   }
-  .header-principal nav div .button-cv {
+  .header-principal nav .nav-container div .logo-a {
     display: flex;
-    padding: 0.7rem 0.8rem;
-    border: 1px solid;
+  }
+  .header-principal nav .nav-container .button-cv {
+    font-size: 1.5rem;
   }
 }
 

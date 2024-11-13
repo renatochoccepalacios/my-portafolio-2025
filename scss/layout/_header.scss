@@ -6,19 +6,30 @@
         margin: 0 auto;
         color: #fff;
 
-        div {
+        .nav-container {
+            // max-width: 1200px;
             padding: 0 2rem;
-            max-width: 1200px;
-
-            .logo-a {
-                color: variables.$color-white;
-            }
 
             .button-toggle {
                 color: variables.$color-white;
+
+            }
+            .logo-a {
+                color: variables.$color-white;
+
             }
 
+         
+
             div {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 2rem;
+                .logo-a {
+                    color: variables.$color-white;
+                    display: none;
+                }
+
                 ul {
                     width: 100%;
                     display: flex;
@@ -38,17 +49,24 @@
                                 color: variables.$color-active;
                             }
                         }
-                        .button-cv {
-                            display: flex;
-                        }
+
+                        // .button-cv {
+                        //     display: flex;
+                        // }
 
                     }
                 }
 
+                .button-cv {
+                    // display: flex;
+                }
+                
             }
 
             .button-cv {
-                display: none;
+                display: flex;
+                color: variables.$color-white;
+
             }
         }
     }
