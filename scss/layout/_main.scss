@@ -69,7 +69,10 @@
         padding: 5rem 0;
         gap: 2.7rem;
 
-        .habilidades-title {}
+        .habilidades-title {
+            color: variables.$color-white;
+
+        }
 
         .habilidades-contenedor {
             display: grid;
@@ -83,7 +86,8 @@
                 border: 1px solid #ffffff1a;
                 border-radius: 0.75rem;
 
-                h3 {}
+                h3 {
+                }
 
                 .habilidades-lenguajes-lista {
                     display: flex;
@@ -95,6 +99,12 @@
                         padding: 0.4rem 0.90rem;
                         border-radius: 0.25rem;
                         text-transform: uppercase;
+                        transition: 0.5s ease;
+                        cursor: pointer;
+
+                        &:hover {
+                            transform: scale(1.2);
+                        }
 
                         &.color-html {
 
