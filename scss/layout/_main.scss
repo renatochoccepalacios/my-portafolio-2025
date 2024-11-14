@@ -176,41 +176,47 @@
     }
 
     .proyectos-section {
-        .proyectos-title {
-
-        }
+        .proyectos-title {}
 
         .proyectos-contenedor {
+            @include mixin.flex-direction-column;
+            gap: 3rem;
+
             .proyectos-item {
-                .img-proyectos {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(min(400px, 100%), 1fr));
+                gap: 2rem;
 
-                }
-                .proyectos-texto {
-                    .proyecto-h3 {
+                figure {
+                    width: 100%;
+                    max-width: 400px;
 
+                    .img-proyectos {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
                     }
+                }
+
+                .proyectos-texto {
+                    .proyecto-h3 {}
 
                     .proyectos-tecnologias {
                         display: flex;
-                    flex-wrap: wrap;
-                    gap: 2rem;
+                        flex-wrap: wrap;
+                        gap: 2rem;
+
                         .habilidad-item {
                             @extend %habilidad-item;
 
 
-                            &.color-html {
+                            &.color-html {}
 
-                            }
-
-                            &.color-css {
-
-                            }
+                            &.color-css {}
                         }
                     }
 
-                    .proyectos-texto-p {
-
-                    }
+                    .proyectos-texto-p {}
                 }
             }
         }
