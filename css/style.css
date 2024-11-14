@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/* colores tecnologias */
 *,
 *::before,
 *::after {
@@ -102,6 +103,17 @@ fieldset {
   color: #fff;
 }
 
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .habilidad-item, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item {
+  padding: 0.4rem 0.9rem;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .habilidad-item:hover, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item:hover {
+  transform: scale(1.2);
+}
+
 .main-principal {
   max-width: 1200px;
   padding: 10rem 2rem 8rem 2rem;
@@ -184,13 +196,6 @@ fieldset {
   flex-wrap: wrap;
   gap: 2rem;
 }
-.main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item {
-  padding: 0.4rem 0.9rem;
-  border-radius: 0.25rem;
-  text-transform: uppercase;
-  transition: 0.5s ease;
-  cursor: pointer;
-}
 .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item:hover {
   transform: scale(1.2);
 }
@@ -227,7 +232,11 @@ fieldset {
 .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.habilidad-responsabilidad {
   background-color: #6A7F7A;
 }
-
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
 @media screen and (min-width: 992px) {
   .header-principal nav .nav-container .logo-a {
     display: none;

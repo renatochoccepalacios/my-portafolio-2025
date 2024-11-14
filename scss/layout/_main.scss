@@ -1,6 +1,19 @@
 @use "../utilidades/variables";
 @use "../utilidades/mixin";
 
+// Definir los placeholders al inicio
+%habilidad-item {
+    padding: 0.4rem 0.90rem;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
 .main-principal {
     max-width: 1200px;
     padding: 10rem 2rem 8rem 2rem;
@@ -87,7 +100,6 @@
                 border: 1px solid #ffffff1a;
                 border-radius: 0.75rem;
 
-                h3 {}
 
                 .habilidades-lenguajes-lista {
                     display: flex;
@@ -96,11 +108,7 @@
 
                     .habilidad-item {
 
-                        padding: 0.4rem 0.90rem;
-                        border-radius: 0.25rem;
-                        text-transform: uppercase;
-                        transition: 0.5s ease;
-                        cursor: pointer;
+                        @extend %habilidad-item;
 
                         &:hover {
                             transform: scale(1.2);
@@ -108,51 +116,100 @@
 
                         &.color-html {
 
-                            background-color: #E34F26;
+                            background-color: variables.$color-html;
                         }
 
                         &.color-css {
 
-                            background-color: #1572B6;
+                            background-color: variables.$color-css;
+
                         }
 
                         &.color-sass {
 
-                            background-color: #CF649A;
+                            background-color: variables.$color-sass;
+
                         }
 
                         &.color-bootstrap {
 
-                            background-color: #7952B3;
+                            background-color: variables.$color-bootstrap;
+
                         }
 
                         &.color-js {
-                            background-color: #988810;
+                            background-color: variables.$color-js;
+
                         }
 
                         &.color-php {
-                            background-color: #4F5B93;
+                            background-color: variables.$color-php;
+
                         }
 
                         &.color-mysql {
-                            background-color: #00758F;
+                            background-color: variables.$color-mysql;
+
                         }
 
                         &.habilidad-trabajo {
-                            background-color: #512DA8;
+                            background-color: variables.$color-trabajo;
                         }
 
                         &.habilidad-puntualidad {
-                            background-color: #4A6C89;
+                            background-color: variables.$color-puntualidad;
+
                         }
 
                         &.habilidad-autodidacta {
-                            background-color: #E67E22;
+                            background-color: variables.$color-autodidacta;
+
                         }
 
                         &.habilidad-responsabilidad {
-                            background-color: #6A7F7A;
+                            background-color: variables.$color-responsabilidad;
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    .proyectos-section {
+        .proyectos-title {
+
+        }
+
+        .proyectos-contenedor {
+            .proyectos-item {
+                .img-proyectos {
+
+                }
+                .proyectos-texto {
+                    .proyecto-h3 {
+
+                    }
+
+                    .proyectos-tecnologias {
+                        display: flex;
+                    flex-wrap: wrap;
+                    gap: 2rem;
+                        .habilidad-item {
+                            @extend %habilidad-item;
+
+
+                            &.color-html {
+
+                            }
+
+                            &.color-css {
+
+                            }
+                        }
+                    }
+
+                    .proyectos-texto-p {
+
                     }
                 }
             }
