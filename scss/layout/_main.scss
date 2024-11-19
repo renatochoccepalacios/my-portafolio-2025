@@ -4,6 +4,8 @@
 // Definir los placeholders al inicio
 %habilidad-item {
     padding: 0.4rem 0.90rem;
+    text-align: center;
+    text-wrap: balance;
     border-radius: 0.25rem;
     text-transform: uppercase;
     transition: 0.5s ease;
@@ -29,6 +31,7 @@
     i {
         font-size: 1.2rem;
     }
+
     &:hover {
         transform: scale(1.1);
     }
@@ -36,7 +39,7 @@
 
 .main-principal {
     max-width: 1200px;
-    padding: 10rem 2rem 8rem 2rem;
+    padding: 0 2rem 8rem 2rem;
 
     margin: 0 auto;
 
@@ -44,6 +47,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(min(500px, 100%), 1fr));
         gap: 2rem;
+        padding: 12rem 0 4rem 0;
 
         .inicio-text {
             @include mixin.flex-direction-column;
@@ -85,9 +89,11 @@
         }
     }
 
+
+
     .habilidades-section {
         display: grid;
-        padding: 5rem 0;
+        padding: 4rem 0;
         gap: 2.7rem;
 
         .habilidades-title {
@@ -113,13 +119,14 @@
                     display: flex;
                     flex-wrap: wrap;
                     gap: 2rem;
+                    justify-content: center;
 
                     .habilidad-item {
 
                         @extend %habilidad-item;
 
 
-                       
+
 
                         &.color-html {
 
@@ -185,8 +192,12 @@
     .proyectos-section {
         @include mixin.flex-direction-column;
         gap: 2.7rem;
-        padding: 5rem 0;
-        .proyectos-title {}
+        padding: 4rem 0;
+
+        .proyectos-title {
+            color: variables.$color-white;
+
+        }
 
         .proyectos-contenedor {
             @include mixin.flex-direction-column;
@@ -197,19 +208,24 @@
                 grid-template-columns: repeat(auto-fill, minmax(min(400px, 100%), 1fr));
                 gap: 2rem;
 
-                figure {
-                    .img-proyectos {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
+                .img-proyectos {
+                    border-radius: .75rem;
+
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
                 }
 
                 .proyectos-texto {
                     @include mixin.flex-direction-column;
                     gap: 1.5rem;
-                    justify-content: space-between;
-                    .proyecto-h3 {}
+                    justify-content: center;
+
+                    .proyecto-h3 {
+                        color: variables.$color-white;
+                        font-size: 1.40rem;
+                        text-transform: uppercase;
+                    }
 
                     .proyectos-tecnologias {
                         display: flex;
@@ -225,38 +241,38 @@
 
                                 background-color: variables.$color-html;
                             }
-    
+
                             &.color-css {
-    
+
                                 background-color: variables.$color-css;
-    
+
                             }
-    
+
                             &.color-sass {
-    
+
                                 background-color: variables.$color-sass;
-    
+
                             }
-    
+
                             &.color-bootstrap {
-    
+
                                 background-color: variables.$color-bootstrap;
-    
+
                             }
-    
+
                             &.color-js {
                                 background-color: variables.$color-js;
-    
+
                             }
-    
+
                             &.color-php {
                                 background-color: variables.$color-php;
-    
+
                             }
-    
+
                             &.color-mysql {
                                 background-color: variables.$color-mysql;
-    
+
                             }
                         }
                     }
@@ -266,6 +282,8 @@
                     .buttons-codigo {
                         display: flex;
                         gap: 1rem;
+                        flex-wrap: wrap;
+
                         .buttons-codigo-item {
                             @extend %text-redes-button;
 

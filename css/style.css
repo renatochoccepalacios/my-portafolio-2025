@@ -105,6 +105,8 @@ fieldset {
 
 .main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .habilidad-item, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item {
   padding: 0.4rem 0.9rem;
+  text-align: center;
+  text-wrap: balance;
   border-radius: 0.25rem;
   text-transform: uppercase;
   transition: 0.5s ease;
@@ -135,13 +137,14 @@ fieldset {
 
 .main-principal {
   max-width: 1200px;
-  padding: 10rem 2rem 8rem 2rem;
+  padding: 0 2rem 8rem 2rem;
   margin: 0 auto;
 }
 .main-principal .inicio-section {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(500px, 100%), 1fr));
   gap: 2rem;
+  padding: 12rem 0 4rem 0;
 }
 .main-principal .inicio-section .inicio-text {
   display: flex;
@@ -176,7 +179,7 @@ fieldset {
 }
 .main-principal .habilidades-section {
   display: grid;
-  padding: 5rem 0;
+  padding: 4rem 0;
   gap: 2.7rem;
 }
 .main-principal .habilidades-section .habilidades-title {
@@ -200,6 +203,7 @@ fieldset {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  justify-content: center;
 }
 .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.color-html {
   background-color: #E34F26;
@@ -238,7 +242,10 @@ fieldset {
   display: flex;
   flex-direction: column;
   gap: 2.7rem;
-  padding: 5rem 0;
+  padding: 4rem 0;
+}
+.main-principal .proyectos-section .proyectos-title {
+  color: #fff;
 }
 .main-principal .proyectos-section .proyectos-contenedor {
   display: flex;
@@ -250,7 +257,8 @@ fieldset {
   grid-template-columns: repeat(auto-fill, minmax(min(400px, 100%), 1fr));
   gap: 2rem;
 }
-.main-principal .proyectos-section .proyectos-contenedor .proyectos-item figure .img-proyectos {
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .img-proyectos {
+  border-radius: 0.75rem;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -259,7 +267,12 @@ fieldset {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  justify-content: space-between;
+  justify-content: center;
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyecto-h3 {
+  color: #fff;
+  font-size: 1.4rem;
+  text-transform: uppercase;
 }
 .main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias {
   display: flex;
@@ -290,6 +303,7 @@ fieldset {
 .main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .buttons-codigo {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 992px) {
   .header-principal nav .nav-container .logo-a {
