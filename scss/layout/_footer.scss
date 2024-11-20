@@ -1,0 +1,21 @@
+@use "../utilidades/variables";
+@use "../utilidades/mixin";
+
+
+.footer-principal {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1rem;
+    align-items: center;
+    padding: 3rem 1rem;
+    .footer-redes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        font-size: 2rem;
+    }
+    
+    
+}
