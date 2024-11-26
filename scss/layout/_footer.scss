@@ -12,6 +12,7 @@
     .footer-redes {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         align-items: center;
         gap: 2rem;
         font-size: 2rem;

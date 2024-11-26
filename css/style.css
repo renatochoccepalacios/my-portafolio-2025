@@ -308,10 +308,14 @@ fieldset {
   background-color: #00758F;
 }
 .main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .buttons-codigo {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
-  flex-wrap: wrap;
 }
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .buttons-codigo .buttons-codigo-item {
+  justify-content: center;
+}
+
 .footer-principal {
   display: grid;
   grid-template-columns: 1fr;
@@ -323,11 +327,20 @@ fieldset {
 .footer-principal .footer-redes {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   gap: 2rem;
   font-size: 2rem;
 }
 
+@media screen and (min-width: 600px) {
+  .header-principal nav .nav-container div {
+    padding: 0 1rem;
+  }
+  .main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .buttons-codigo {
+    grid-template-columns: repeat(2, 140px);
+  }
+}
 @media screen and (min-width: 992px) {
   .header-principal nav .nav-container .logo-a {
     display: none;
@@ -337,11 +350,6 @@ fieldset {
   }
   .header-principal nav .nav-container .button-cv {
     font-size: 1.5rem;
-  }
-}
-@media screen and (min-width: 600px) {
-  .header-principal nav .nav-container div {
-    padding: 0 1rem;
   }
 }
 

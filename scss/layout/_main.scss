@@ -285,15 +285,15 @@
                         }
                     }
 
-                    .proyectos-texto-p {}
-
                     .buttons-codigo {
-                        display: flex;
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
                         gap: 1rem;
-                        flex-wrap: wrap;
-
                         .buttons-codigo-item {
                             @extend %text-redes-button;
+                            justify-content: center;
+
+
 
                         }
                     }

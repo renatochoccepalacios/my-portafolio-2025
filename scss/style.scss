@@ -1,8 +1,8 @@
-@use "utilidades/variables";
-@use "utilidades/mixin";
-@use "base/reset";
-@use "layout/header";
-@use "layout/main";
-@use "layout/footer";
-@use "base/mediaquerys/mq-desktop";
-@use "base/mediaquerys/mq-tablet";
+@use "utilidades/variables"; // Variables globales
+@use "utilidades/mixin"; // Mixins, placeholders y funciones
+@use "base/reset"; // Reset de estilos
+@use "layout/header"; // Header
+@use "layout/main"; // Main
+@use "layout/footer"; // Footer
+@use "base/mediaquerys/mq-tablet"; // Media queries específicas (tablet primero)
+@use "base/mediaquerys/mq-desktop"; // Media queries más grandes después

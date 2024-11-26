@@ -11,4 +11,18 @@
         }
     }
 
+
+    .main-principal {
+        .proyectos-section {
+            .proyectos-contenedor {
+                .proyectos-item {
+                    .proyectos-texto {
+                        .buttons-codigo {
+                            grid-template-columns: repeat(2, 140px);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
