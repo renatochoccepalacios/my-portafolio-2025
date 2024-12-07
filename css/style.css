@@ -115,6 +115,72 @@ fieldset {
 .main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .habilidad-item:hover, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item:hover {
   transform: scale(1.1);
 }
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .color-html.habilidad-item, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .color-html.habilidad-item {
+  background-color: #E34F26;
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .color-html.habilidad-item:hover, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .color-html.habilidad-item:hover {
+  box-shadow: 0 0 30px rgba(227, 79, 38, 0.8), 0 2px 4px rgba(227, 79, 38, 0.6);
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .color-css.habilidad-item, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .color-css.habilidad-item {
+  background-color: #1572B6;
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .color-css.habilidad-item:hover, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .color-css.habilidad-item:hover {
+  box-shadow: 0 0 30px rgba(21, 114, 182, 0.8), 0 2px 4px rgba(21, 114, 182, 0.6);
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .color-sass.habilidad-item, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .color-sass.habilidad-item {
+  background-color: #CF649A;
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .color-sass.habilidad-item:hover, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .color-sass.habilidad-item:hover {
+  box-shadow: 0 0 30px rgba(207, 100, 154, 0.8), 0 2px 4px rgba(207, 100, 154, 0.6);
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .color-bootstrap.habilidad-item, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .color-bootstrap.habilidad-item {
+  background-color: #7952B3;
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .color-bootstrap.habilidad-item:hover, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .color-bootstrap.habilidad-item:hover {
+  box-shadow: 0 0 30px rgba(121, 82, 179, 0.8), 0 2px 4px rgba(121, 82, 179, 0.6);
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .color-js.habilidad-item, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .color-js.habilidad-item {
+  background-color: #988810;
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .color-js.habilidad-item:hover, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .color-js.habilidad-item:hover {
+  box-shadow: 0 0 30px rgba(152, 136, 16, 0.8), 0 2px 4px rgba(152, 136, 16, 0.6);
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .color-php.habilidad-item, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .color-php.habilidad-item {
+  background-color: #4F5B93;
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .color-php.habilidad-item:hover, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .color-php.habilidad-item:hover {
+  box-shadow: 0 0 30px rgba(79, 91, 147, 0.8), 0 2px 4px rgba(79, 91, 147, 0.6);
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .color-mysql.habilidad-item, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .color-mysql.habilidad-item {
+  background-color: #00758F;
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .color-mysql.habilidad-item:hover, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .color-mysql.habilidad-item:hover {
+  box-shadow: 0 0 30px rgba(0, 117, 143, 0.8), 0 2px 4px rgba(0, 117, 143, 0.6);
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .habilidad-trabajo.habilidad-item, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-trabajo.habilidad-item {
+  background-color: #512DA8;
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .habilidad-trabajo.habilidad-item:hover, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-trabajo.habilidad-item:hover {
+  box-shadow: 0 0 30px rgba(81, 45, 168, 0.8), 0 2px 4px rgba(81, 45, 168, 0.6);
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .habilidad-puntualidad.habilidad-item, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-puntualidad.habilidad-item {
+  background-color: #4A6C89;
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .habilidad-puntualidad.habilidad-item:hover, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-puntualidad.habilidad-item:hover {
+  box-shadow: 0 0 30px rgba(74, 108, 137, 0.8), 0 2px 4px rgba(74, 108, 137, 0.6);
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .habilidad-autodidacta.habilidad-item, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-autodidacta.habilidad-item {
+  background-color: #E67E22;
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .habilidad-autodidacta.habilidad-item:hover, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-autodidacta.habilidad-item:hover {
+  box-shadow: 0 0 30px rgba(230, 126, 34, 0.8), 0 2px 4px rgba(230, 126, 34, 0.6);
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .habilidad-responsabilidad.habilidad-item, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-responsabilidad.habilidad-item {
+  background-color: #6A7F7A;
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .habilidad-responsabilidad.habilidad-item:hover, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-responsabilidad.habilidad-item:hover {
+  box-shadow: 0 0 30px rgba(106, 127, 122, 0.8), 0 2px 4px rgba(106, 127, 122, 0.6);
+}
 
 .main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .buttons-codigo .buttons-codigo-item, .main-principal .inicio-section .inicio-text .text-redes .text-redes-button {
   display: flex;
@@ -175,7 +241,8 @@ fieldset {
   max-width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 5rem;
+  filter: drop-shadow(0px 4px 4px #9b9b9b);
 }
 .main-principal .habilidades-section {
   display: grid;
@@ -203,39 +270,6 @@ fieldset {
   display: flex;
   flex-wrap: wrap;
   gap: 0.9rem;
-}
-.main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.color-html {
-  background-color: #E34F26;
-}
-.main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.color-css {
-  background-color: #1572B6;
-}
-.main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.color-sass {
-  background-color: #CF649A;
-}
-.main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.color-bootstrap {
-  background-color: #7952B3;
-}
-.main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.color-js {
-  background-color: #988810;
-}
-.main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.color-php {
-  background-color: #4F5B93;
-}
-.main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.color-mysql {
-  background-color: #00758F;
-}
-.main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.habilidad-trabajo {
-  background-color: #512DA8;
-}
-.main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.habilidad-puntualidad {
-  background-color: #4A6C89;
-}
-.main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.habilidad-autodidacta {
-  background-color: #E67E22;
-}
-.main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-item.habilidad-responsabilidad {
-  background-color: #6A7F7A;
 }
 .main-principal .proyectos-section {
   display: flex;
@@ -285,27 +319,6 @@ fieldset {
   display: flex;
   flex-wrap: wrap;
   gap: 0.88rem;
-}
-.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .habilidad-item.color-html {
-  background-color: #E34F26;
-}
-.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .habilidad-item.color-css {
-  background-color: #1572B6;
-}
-.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .habilidad-item.color-sass {
-  background-color: #CF649A;
-}
-.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .habilidad-item.color-bootstrap {
-  background-color: #7952B3;
-}
-.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .habilidad-item.color-js {
-  background-color: #988810;
-}
-.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .habilidad-item.color-php {
-  background-color: #4F5B93;
-}
-.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .habilidad-item.color-mysql {
-  background-color: #00758F;
 }
 .main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .buttons-codigo {
   display: grid;

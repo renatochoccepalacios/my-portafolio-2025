@@ -6,6 +6,7 @@ $color-3: #172340;
 $color-4: #24304D;
 $color-white: #fff;
 $color-active: #c3c3c3;
+$color-drop-shadow-1: #9b9b9b;
 
 
 /* colores tecnologias */
@@ -21,3 +22,39 @@ $color-trabajo: #512DA8;
 $color-puntualidad: #4A6C89;
 $color-autodidacta: #E67E22;
 $color-responsabilidad: #6A7F7A;
+
+
+// Colores para sombras de tecnologías (con más intensidad)
+$color-html-shadow: rgba(227, 79, 38, 0.8); // Aumentando opacidad
+$color-html-shadow-secondary: rgba(227, 79, 38, 0.6); // Un poco más suave
+
+$color-css-shadow: rgba(21, 114, 182, 0.8);
+$color-css-shadow-secondary: rgba(21, 114, 182, 0.6);
+
+$color-sass-shadow: rgba(207, 100, 154, 0.8);
+$color-sass-shadow-secondary: rgba(207, 100, 154, 0.6);
+
+$color-bootstrap-shadow: rgba(121, 82, 179, 0.8);
+$color-bootstrap-shadow-secondary: rgba(121, 82, 179, 0.6);
+
+$color-js-shadow: rgba(152, 136, 16, 0.8);
+$color-js-shadow-secondary: rgba(152, 136, 16, 0.6);
+
+$color-php-shadow: rgba(79, 91, 147, 0.8);
+$color-php-shadow-secondary: rgba(79, 91, 147, 0.6);
+
+$color-mysql-shadow: rgba(0, 117, 143, 0.8);
+$color-mysql-shadow-secondary: rgba(0, 117, 143, 0.6);
+
+// Colores para sombras de habilidades (con más intensidad)
+$color-trabajo-shadow: rgba(81, 45, 168, 0.8);
+$color-trabajo-shadow-secondary: rgba(81, 45, 168, 0.6);
+
+$color-puntualidad-shadow: rgba(74, 108, 137, 0.8);
+$color-puntualidad-shadow-secondary: rgba(74, 108, 137, 0.6);
+
+$color-autodidacta-shadow: rgba(230, 126, 34, 0.8);
+$color-autodidacta-shadow-secondary: rgba(230, 126, 34, 0.6);
+
+$color-responsabilidad-shadow: rgba(106, 127, 122, 0.8);
+$color-responsabilidad-shadow-secondary: rgba(106, 127, 122, 0.6);

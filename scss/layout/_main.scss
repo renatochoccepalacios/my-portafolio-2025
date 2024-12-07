@@ -15,6 +15,83 @@
     &:hover {
         transform: scale(1.1);
     }
+
+    &.color-html {
+        background-color: variables.$color-html;
+        &:hover {
+            box-shadow: 0 0 30px variables.$color-html-shadow, 0 2px 4px variables.$color-html-shadow-secondary;
+        }
+    }
+    
+    &.color-css {
+        background-color: variables.$color-css;
+        &:hover {
+            box-shadow: 0 0 30px variables.$color-css-shadow, 0 2px 4px variables.$color-css-shadow-secondary;
+        }
+    }
+    
+    &.color-sass {
+        background-color: variables.$color-sass;
+        &:hover {
+            box-shadow: 0 0 30px variables.$color-sass-shadow, 0 2px 4px variables.$color-sass-shadow-secondary;
+        }
+    }
+    
+    &.color-bootstrap {
+        background-color: variables.$color-bootstrap;
+        &:hover {
+            box-shadow: 0 0 30px variables.$color-bootstrap-shadow, 0 2px 4px variables.$color-bootstrap-shadow-secondary;
+        }
+    }
+    
+    &.color-js {
+        background-color: variables.$color-js;
+        &:hover {
+            box-shadow: 0 0 30px variables.$color-js-shadow, 0 2px 4px variables.$color-js-shadow-secondary;
+        }
+    }
+    
+    &.color-php {
+        background-color: variables.$color-php;
+        &:hover {
+            box-shadow: 0 0 30px variables.$color-php-shadow, 0 2px 4px variables.$color-php-shadow-secondary;
+        }
+    }
+    
+    &.color-mysql {
+        background-color: variables.$color-mysql;
+        &:hover {
+            box-shadow: 0 0 30px variables.$color-mysql-shadow, 0 2px 4px variables.$color-mysql-shadow-secondary;
+        }
+    }
+    
+    &.habilidad-trabajo {
+        background-color: variables.$color-trabajo;
+        &:hover {
+            box-shadow: 0 0 30px variables.$color-trabajo-shadow, 0 2px 4px variables.$color-trabajo-shadow-secondary;
+        }
+    }
+    
+    &.habilidad-puntualidad {
+        background-color: variables.$color-puntualidad;
+        &:hover {
+            box-shadow: 0 0 30px variables.$color-puntualidad-shadow, 0 2px 4px variables.$color-puntualidad-shadow-secondary;
+        }
+    }
+    
+    &.habilidad-autodidacta {
+        background-color: variables.$color-autodidacta;
+        &:hover {
+            box-shadow: 0 0 30px variables.$color-autodidacta-shadow, 0 2px 4px variables.$color-autodidacta-shadow-secondary;
+        }
+    }
+    
+    &.habilidad-responsabilidad {
+        background-color: variables.$color-responsabilidad;
+        &:hover {
+            box-shadow: 0 0 30px variables.$color-responsabilidad-shadow, 0 2px 4px variables.$color-responsabilidad-shadow-secondary;
+        }
+    }
 }
 
 %text-redes-button {
@@ -85,7 +162,8 @@
 
             img {
                 @include mixin.img-responsiva;
-                border-radius: 50%;
+                border-radius: 5rem;
+                filter: drop-shadow(0px 4px 4px variables.$color-drop-shadow-1);
             }
         }
     }
@@ -122,67 +200,7 @@
                     gap: 0.9rem;
 
                     .habilidad-item {
-
-                        @extend %habilidad-item;
-
-
-
-
-                        &.color-html {
-
-                            background-color: variables.$color-html;
-                        }
-
-                        &.color-css {
-
-                            background-color: variables.$color-css;
-
-                        }
-
-                        &.color-sass {
-
-                            background-color: variables.$color-sass;
-
-                        }
-
-                        &.color-bootstrap {
-
-                            background-color: variables.$color-bootstrap;
-
-                        }
-
-                        &.color-js {
-                            background-color: variables.$color-js;
-
-                        }
-
-                        &.color-php {
-                            background-color: variables.$color-php;
-
-                        }
-
-                        &.color-mysql {
-                            background-color: variables.$color-mysql;
-
-                        }
-
-                        &.habilidad-trabajo {
-                            background-color: variables.$color-trabajo;
-                        }
-
-                        &.habilidad-puntualidad {
-                            background-color: variables.$color-puntualidad;
-
-                        }
-
-                        &.habilidad-autodidacta {
-                            background-color: variables.$color-autodidacta;
-
-                        }
-
-                        &.habilidad-responsabilidad {
-                            background-color: variables.$color-responsabilidad;
-                        }
+                        @extend %habilidad-item;                       
                     }
                 }
             }
@@ -242,46 +260,6 @@
 
                         .habilidad-item {
                             @extend %habilidad-item;
-
-
-
-                            &.color-html {
-
-                                background-color: variables.$color-html;
-                            }
-
-                            &.color-css {
-
-                                background-color: variables.$color-css;
-
-                            }
-
-                            &.color-sass {
-
-                                background-color: variables.$color-sass;
-
-                            }
-
-                            &.color-bootstrap {
-
-                                background-color: variables.$color-bootstrap;
-
-                            }
-
-                            &.color-js {
-                                background-color: variables.$color-js;
-
-                            }
-
-                            &.color-php {
-                                background-color: variables.$color-php;
-
-                            }
-
-                            &.color-mysql {
-                                background-color: variables.$color-mysql;
-
-                            }
                         }
                     }
 
