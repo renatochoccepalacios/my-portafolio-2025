@@ -345,6 +345,18 @@ fieldset {
   gap: 2rem;
   font-size: 2rem;
 }
+.footer-principal .footer-redes .redes-footer {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s ease;
+  border-radius: 60%;
+  /* &:hover {
+      box-shadow: 0px 0px 32px rgba(224, 224, 224, 0.466); // Aplica el box-shadow al hacer hover
+      transform: scale(1.1); // Puedes ajustar la escala si quieres otro efecto
+  } */
+}
 
 @media screen and (min-width: 600px) {
   .header-principal nav .nav-container div {

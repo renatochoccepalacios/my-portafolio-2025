@@ -9,6 +9,7 @@
     gap: 1rem;
     align-items: center;
     padding: 3rem 1rem;
+
     .footer-redes {
         display: flex;
         justify-content: center;
@@ -16,7 +17,21 @@
         align-items: center;
         gap: 2rem;
         font-size: 2rem;
+
+        .redes-footer {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: variables.$color-white;
+            transition: 0.3s ease;
+            border-radius: 60%;
+            /* &:hover {
+                box-shadow: 0px 0px 32px #{variables.$color-footer-shadow}; // Aplica el box-shadow al hacer hover
+                transform: scale(1.1); // Puedes ajustar la escala si quieres otro efecto
+            } */
+            
+        }
     }
-    
-    
+
+
 }
