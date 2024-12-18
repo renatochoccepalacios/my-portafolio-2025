@@ -7,8 +7,8 @@ $color-4: #24304D;
 $color-white: #fff;
 $color-active: #c3c3c3;
 $color-drop-shadow-1: #9b9b9b;
-
-
+$color-3-shadow: #172340; // Azul profundo basado en $color-3
+$color-3-shadow-secondary: #1e1e73; // Azul vibrante basado en $color-2
 /* colores tecnologias */
 $color-html: #E34F26;
 $color-css: #1572B6;
@@ -17,12 +17,17 @@ $color-bootstrap: #7952B3;
 $color-js: #988810;
 $color-php: #4F5B93;
 $color-mysql: #00758F;
+$color-git: #D16A33; // Rojo-anaranjado de Git
+$color-github: #24292E; // Negro grisáceo de GitHub
+
 
 $color-trabajo: #512DA8;
 $color-puntualidad: #4A6C89;
 $color-autodidacta: #E67E22;
 $color-responsabilidad: #6A7F7A;
-
+$color-organizacion: #2C3E50; // Azul oscuro con toques de gris para transmitir seriedad y organización
+$color-organizacion-shadow: #34495E; // Sombra más oscura para dar profundidad
+$color-organizacion-shadow-secondary: #5D6D7E; // Sombra más suave para resaltar sin sobrecargar
 
 // Colores para sombras de tecnologías (con más intensidad)
 $color-html-shadow: rgba(227, 79, 38, 0.8); // Aumentando opacidad
@@ -59,3 +64,9 @@ $color-autodidacta-shadow-secondary: rgba(230, 126, 34, 0.6);
 $color-responsabilidad-shadow: rgba(106, 127, 122, 0.8);
 $color-responsabilidad-shadow-secondary: rgba(106, 127, 122, 0.6);
 $color-footer-shadow: rgba(224, 224, 224, 0.466);
+
+$color-git-shadow: #E77A53; // Tonalidad más clara, para resaltar
+$color-git-shadow-secondary: #C45928; // Más oscuro y cálido para dar profundidad
+
+$color-github-shadow: #40454F; // Gris más claro para la sombra primaria
+$color-github-shadow-secondary: #24292E; // Mantiene el tono base oscuro

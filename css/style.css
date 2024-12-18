@@ -157,6 +157,18 @@ fieldset {
 .main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .color-mysql.habilidad-item:hover, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .color-mysql.habilidad-item:hover {
   box-shadow: 0 0 30px rgba(0, 117, 143, 0.8), 0 2px 4px rgba(0, 117, 143, 0.6);
 }
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .color-git.habilidad-item, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .color-git.habilidad-item {
+  background-color: #D16A33;
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .color-git.habilidad-item:hover, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .color-git.habilidad-item:hover {
+  box-shadow: 0 0 30px #E77A53, 0 2px 4px #C45928;
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .color-github.habilidad-item, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .color-github.habilidad-item {
+  background-color: #24292E;
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .color-github.habilidad-item:hover, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .color-github.habilidad-item:hover {
+  box-shadow: 0 0 30px #40454F, 0 2px 4px #24292E;
+}
 .main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .habilidad-trabajo.habilidad-item, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-trabajo.habilidad-item {
   background-color: #512DA8;
 }
@@ -181,6 +193,12 @@ fieldset {
 .main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .habilidad-responsabilidad.habilidad-item:hover, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-responsabilidad.habilidad-item:hover {
   box-shadow: 0 0 30px rgba(106, 127, 122, 0.8), 0 2px 4px rgba(106, 127, 122, 0.6);
 }
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .habilidad-organizacion.habilidad-item, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-organizacion.habilidad-item {
+  background-color: #2C3E50;
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .proyectos-tecnologias .habilidad-organizacion.habilidad-item:hover, .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista .habilidad-organizacion.habilidad-item:hover {
+  box-shadow: 0 0 30px #34495E, 0 2px 4px #5D6D7E;
+}
 
 .main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .buttons-codigo .buttons-codigo-item, .main-principal .inicio-section .inicio-text .text-redes .text-redes-button {
   display: flex;
@@ -193,12 +211,12 @@ fieldset {
   border-radius: 2rem;
   color: #fff;
   transition: 0.5s ease;
+  /* &:hover {
+      transform: scale(1.1);
+  } */
 }
 .main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .buttons-codigo .buttons-codigo-item i, .main-principal .inicio-section .inicio-text .text-redes .text-redes-button i {
   font-size: 1.2rem;
-}
-.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .buttons-codigo .buttons-codigo-item:hover, .main-principal .inicio-section .inicio-text .text-redes .text-redes-button:hover {
-  transform: scale(1.1);
 }
 
 .main-principal {
@@ -265,6 +283,11 @@ fieldset {
   background-color: #172340;
   border: 1px solid rgba(255, 255, 255, 0.1019607843);
   border-radius: 0.75rem;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes:hover {
+  box-shadow: 0 0 10px #172340, 0 0 20px #1e1e73, 0 0 40px #1e1e73, 0 0 80px #1e1e73;
 }
 .main-principal .habilidades-section .habilidades-contenedor .habilidades-lenguajes .habilidades-lenguajes-lista {
   display: flex;
@@ -327,6 +350,9 @@ fieldset {
 }
 .main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .buttons-codigo .buttons-codigo-item {
   justify-content: center;
+}
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .buttons-codigo .buttons-codigo-item:hover {
+  box-shadow: 0 0 10px #172340, 0 0 20px #1e1e73, 0 0 40px #1e1e73, 0 0 80px #1e1e73;
 }
 
 .footer-principal {
