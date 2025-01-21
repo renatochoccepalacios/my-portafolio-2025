@@ -359,7 +359,21 @@ fieldset {
 .main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .buttons-codigo .buttons-codigo-item:hover {
   box-shadow: 0 0 10px #172340, 0 0 20px #1e1e73, 0 0 40px #1e1e73, 0 0 80px #1e1e73;
 }
-
+.main-principal .slider-section {
+  padding: 4rem 0;
+}
+.main-principal .slider-section .slider-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.main-principal .slider-section .slider-contenedor .carousel-inner .carousel-item img {
+  width: 100%;
+  min-height: 400px;
+  object-fit: cover;
+}
 .footer-principal {
   display: grid;
   grid-template-columns: 1fr;
