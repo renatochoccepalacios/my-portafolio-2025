@@ -129,6 +129,12 @@
     }
 }
 
+.h2-section-title {
+    color: variables.$color-white;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
 %text-redes-button {
     display: flex;
     align-items: center;
@@ -225,10 +231,7 @@
         padding: 4rem 0;
         gap: 2.7rem;
 
-        .habilidades-title {
-            color: variables.$color-white;
 
-        }
 
         .habilidades-contenedor {
             display: grid;
@@ -271,10 +274,7 @@
         gap: 2.7rem;
         padding: 4rem 0;
 
-        .proyectos-title {
-            color: variables.$color-white;
 
-        }
 
         .proyectos-contenedor {
             @include mixin.flex-direction-column;
@@ -349,28 +349,55 @@
     }
 
     .slider-section {
+        display: flex;
+        flex-direction: column;
+        gap: 2.7rem;
         padding: 4rem 0;
-        .slider-contenedor {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            // max-width: 800px;
-            width: 100%;
-            margin: 0 auto;
 
-            .carousel-inner {
-                .carousel-item {
-                    img {
-                        width: 100%;
-                        min-height: 400px;
-                        object-fit: cover;
+
+        .carousel-texto-grid {
+
+            display: grid;
+            gap: 2.7rem;
+            .carousel-texto {
+                h2 {
+                    font-size: 2.5rem;
+                    color: variables.$color-white;
+                    margin-bottom: 1.4rem; 
+                    text-wrap: balance;
+                    border-bottom: 1px solid variables.$color-white;  
+                    padding-bottom: 1rem;
+                    span {
+                        display: block;
                     }
                 }
+                h3  {
+                    font-size: 1.3rem;
+                }
             }
+            .slider-contenedor {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                max-width: 800px;
+                width: 100%;
+                margin: 0 auto;
 
-            .carousel-control-prev,
-            .carousel-control-next {}
+                .carousel-inner {
+                    .carousel-item {
+                        img {
+                            width: 100%;
+                            min-height: 400px;
+                            object-fit: cover;
+                        }
+                    }
+                }
+
+                .carousel-control-prev,
+                .carousel-control-next {}
+            }
         }
+
     }
 
 

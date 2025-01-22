@@ -200,6 +200,12 @@ fieldset {
   box-shadow: 0 0 30px #34495E, 0 2px 4px #5D6D7E;
 }
 
+.h2-section-title {
+  color: #fff;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
 .main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .buttons-codigo .buttons-codigo-item {
   display: flex;
   align-items: center;
@@ -283,9 +289,6 @@ fieldset {
   padding: 4rem 0;
   gap: 2.7rem;
 }
-.main-principal .habilidades-section .habilidades-title {
-  color: #fff;
-}
 .main-principal .habilidades-section .habilidades-contenedor {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
@@ -315,9 +318,6 @@ fieldset {
   flex-direction: column;
   gap: 2.7rem;
   padding: 4rem 0;
-}
-.main-principal .proyectos-section .proyectos-title {
-  color: #fff;
 }
 .main-principal .proyectos-section .proyectos-contenedor {
   display: flex;
@@ -371,16 +371,38 @@ fieldset {
   box-shadow: 0 0 10px #172340, 0 0 20px #1e1e73, 0 0 40px #1e1e73, 0 0 80px #1e1e73;
 }
 .main-principal .slider-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.7rem;
   padding: 4rem 0;
 }
-.main-principal .slider-section .slider-contenedor {
+.main-principal .slider-section .carousel-texto-grid {
+  display: grid;
+  gap: 2.7rem;
+}
+.main-principal .slider-section .carousel-texto-grid .carousel-texto h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1.4rem;
+  text-wrap: balance;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1rem;
+}
+.main-principal .slider-section .carousel-texto-grid .carousel-texto h2 span {
+  display: block;
+}
+.main-principal .slider-section .carousel-texto-grid .carousel-texto h3 {
+  font-size: 1.3rem;
+}
+.main-principal .slider-section .carousel-texto-grid .slider-contenedor {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
-.main-principal .slider-section .slider-contenedor .carousel-inner .carousel-item img {
+.main-principal .slider-section .carousel-texto-grid .slider-contenedor .carousel-inner .carousel-item img {
   width: 100%;
   min-height: 400px;
   object-fit: cover;
@@ -431,6 +453,9 @@ fieldset {
   }
   .header-principal nav .nav-container .button-cv {
     font-size: 1.5rem;
+  }
+  .main-principal .slider-section .carousel-texto-grid {
+    grid-template-columns: 500px 1fr;
   }
 }
 
