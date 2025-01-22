@@ -401,12 +401,15 @@ fieldset {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  /* .carousel-control-prev,
+  .carousel-control-next {} */
 }
 .main-principal .slider-section .carousel-texto-grid .slider-contenedor .carousel-inner .carousel-item img {
   width: 100%;
   min-height: 400px;
   object-fit: cover;
 }
+
 .footer-principal {
   display: grid;
   grid-template-columns: 1fr;
