@@ -179,10 +179,18 @@
             .text-redes {
                 display: flex;
                 gap: 1rem;
+                align-items: center;
                 flex-wrap: wrap;
 
                 .text-redes-button {
-                    @extend %text-redes-button;
+                    display: flex;
+                    font-size: 25px;
+                    gap: 10px;
+                    border: 1px solid;
+                    padding: 6px 13px;
+                    border-radius: 50px;
+                    align-items: center;
+                    justify-content: center;
                 }
             }
         }

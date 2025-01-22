@@ -200,7 +200,7 @@ fieldset {
   box-shadow: 0 0 30px #34495E, 0 2px 4px #5D6D7E;
 }
 
-.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .buttons-codigo .buttons-codigo-item, .main-principal .inicio-section .inicio-text .text-redes .text-redes-button {
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .buttons-codigo .buttons-codigo-item {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -215,7 +215,7 @@ fieldset {
       transform: scale(1.1);
   } */
 }
-.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .buttons-codigo .buttons-codigo-item i, .main-principal .inicio-section .inicio-text .text-redes .text-redes-button i {
+.main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .buttons-codigo .buttons-codigo-item i {
   font-size: 1.2rem;
 }
 
@@ -245,7 +245,18 @@ fieldset {
 .main-principal .inicio-section .inicio-text .text-redes {
   display: flex;
   gap: 1rem;
+  align-items: center;
   flex-wrap: wrap;
+}
+.main-principal .inicio-section .inicio-text .text-redes .text-redes-button {
+  display: flex;
+  font-size: 25px;
+  gap: 10px;
+  border: 1px solid;
+  padding: 6px 13px;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
 }
 .main-principal .inicio-section .img-inicio {
   display: flex;
