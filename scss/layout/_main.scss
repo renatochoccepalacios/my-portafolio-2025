@@ -131,7 +131,7 @@
 
 .h2-section-title {
     color: variables.$color-white;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 5vw, 2rem);
     letter-spacing: 2px;
 }
 
@@ -156,11 +156,37 @@
     } */
 }
 
+.section-contacto {
+    // display: none;
+    position: fixed                                                                                                                                                                   ;
+    min-height: 100vh;
+    z-index: 1000;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: rgba(10, 9, 9, 0.688);
+    .formulario-contacto {
+        background-color: variables.$color-3;
+        padding: 1rem 1.2rem;
+        
+        h2 {
+            color: variables.$color-white;
+        }
+
+        .formulario-inputs-contacto {
+            display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+        }
+    }
+}
+
 .main-principal {
     max-width: 1200px;
     padding: 0 1rem 8rem 1rem;
 
     margin: 0 auto;
+
+    
 
     .inicio-section {
         display: grid;
@@ -361,7 +387,7 @@
             gap: 2.7rem;
             .carousel-texto {
                 h2 {
-                    font-size: 2.5rem;
+                    font-size: clamp(1.5rem, 5vw, 2.5rem);
                     color: variables.$color-white;
                     margin-bottom: 1.4rem; 
                     text-wrap: balance;
@@ -372,7 +398,7 @@
                     }
                 }
                 h3  {
-                    font-size: 1.3rem;
+                    font-size: clamp(1.2rem, 5vw, 1rem);
                 }
             }
             .slider-contenedor {

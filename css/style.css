@@ -202,7 +202,7 @@ fieldset {
 
 .h2-section-title {
   color: #fff;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 5vw, 2rem);
   letter-spacing: 2px;
 }
 
@@ -223,6 +223,27 @@ fieldset {
 }
 .main-principal .proyectos-section .proyectos-contenedor .proyectos-item .proyectos-texto .buttons-codigo .buttons-codigo-item i {
   font-size: 1.2rem;
+}
+
+.section-contacto {
+  position: fixed;
+  min-height: 100vh;
+  z-index: 1000;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: rgba(10, 9, 9, 0.688);
+}
+.section-contacto .formulario-contacto {
+  background-color: #172340;
+  padding: 1rem 1.2rem;
+}
+.section-contacto .formulario-contacto h2 {
+  color: #fff;
+}
+.section-contacto .formulario-contacto .formulario-inputs-contacto {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
 }
 
 .main-principal {
@@ -381,7 +402,7 @@ fieldset {
   gap: 2.7rem;
 }
 .main-principal .slider-section .carousel-texto-grid .carousel-texto h2 {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
   color: #fff;
   margin-bottom: 1.4rem;
   text-wrap: balance;
@@ -392,7 +413,7 @@ fieldset {
   display: block;
 }
 .main-principal .slider-section .carousel-texto-grid .carousel-texto h3 {
-  font-size: 1.3rem;
+  font-size: clamp(1.2rem, 5vw, 1rem);
 }
 .main-principal .slider-section .carousel-texto-grid .slider-contenedor {
   display: flex;
