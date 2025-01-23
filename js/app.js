@@ -51,10 +51,11 @@ function abrirContacto() {
     divFormulario.appendChild(mensaje);
     divFormulario.appendChild(buttonSubmit);
 
+
     // Aplica la clase de animación después de agregar el formulario al DOM
     setTimeout(() => {
         sectionContacto.classList.add('transition-active');
-    }, 50); // Pequeña demora para que el DOM se actualice
+    }, 1); // Pequeña demora para que el DOM se actualice
 
     // Aplica la animación después de que el formulario ha sido agregado al DOM
     sectionContacto.setAttribute('transition-style', 'in:wipe:left');
