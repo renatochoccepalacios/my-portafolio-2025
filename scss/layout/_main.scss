@@ -156,74 +156,98 @@
     } */
 }
 
-.section-contacto {
-    // display: none;
-    position: fixed;
+@keyframes wipe-in-left {
+    from {
+        clip-path: inset(0 0 0 100%);
+    }
+
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+.contacto-contenedor {
+    position: absolute;
     min-height: 100vh;
-    z-index: 1000;
-    width: 100%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(10, 9, 9, 0.688);
 
-    .formulario-contacto {
-        background-color: variables.$color-3;
-        padding: 1rem 1.2rem;
+    .section-contacto {
+        // display: none;
+        position: fixed;
+        min-height: 100vh;
+        z-index: 1000;
         width: 100%;
-        max-width: 500px;
-        border-radius: 20px;
-        box-shadow:
-            0 0 10px variables.$color-3-shadow,
-            0 0 20px variables.$color-3-shadow-secondary,
-            0 0 40px variables.$color-2,
-            0 0 80px variables.$color-2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(10, 9, 9, 0.688);
+        animation: none; // Sin animación inicialmente
 
-        h2 {
-            text-align: center;
-            text-transform: uppercase;
-            color: variables.$color-white;
-            margin-bottom: 1rem;
+        &.transition-active {
+            // Esta clase será añadida con JS para activar la animación
+            animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
         }
 
-        .formulario-inputs-contacto {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 0.8rem;
+        .formulario-contacto {
+            background-color: variables.$color-3;
+            padding: 1rem 1.2rem;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 20px;
+            box-shadow:
+                0 0 10px variables.$color-3-shadow,
+                0 0 20px variables.$color-3-shadow-secondary,
+                0 0 40px variables.$color-2,
+                0 0 80px variables.$color-2;
+            
 
-            input {
-                border: 1px solid;
-                border-radius: 0.5rem;
-                padding: 0.5rem 0.8rem;
-                outline: none;
-                transition: box-shadow 0.3s ease;
 
-                &:focus {
-                    box-shadow: 0 0 5px 2px rgba(0, 123, 255, 0.5);
-                    border-color: #007bff;
-                }
+
+            h2 {
+                text-align: center;
+                text-transform: uppercase;
+                color: variables.$color-white;
+                margin-bottom: 1rem;
             }
 
-            textarea {
-                border: 1px solid;
-                border-radius: 0.5rem;
-                padding: 0.5rem 0.8rem;
-                outline: none;
-                transition: box-shadow 0.3s ease;
+            .formulario-inputs-contacto {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 0.8rem;
 
-                &:focus {
-                    box-shadow: 0 0 5px 2px rgba(0, 123, 255, 0.5);
-                    border-color: #007bff;
+                input {
+                    border: 1px solid;
+                    border-radius: 0.5rem;
+                    padding: 0.5rem 0.8rem;
+                    outline: none;
+                    transition: box-shadow 0.3s ease;
+
+                    &:focus {
+                        box-shadow: 0 0 5px 2px rgba(0, 123, 255, 0.5);
+                        border-color: #007bff;
+                    }
                 }
-            }
 
-            button {
-                margin-top: 20px;
-                padding: 0.5rem 1rem;
-                
-                background-color: variables.$color-1;
-                border-radius: 0.5rem;
-                border: 1px solid variables.$color-active;
+                textarea {
+                    border: 1px solid;
+                    border-radius: 0.5rem;
+                    padding: 0.5rem 0.8rem;
+                    outline: none;
+                    transition: box-shadow 0.3s ease;
+
+                    &:focus {
+                        box-shadow: 0 0 5px 2px rgba(0, 123, 255, 0.5);
+                        border-color: #007bff;
+                    }
+                }
+
+                button {
+                    margin-top: 20px;
+                    padding: 0.5rem 1rem;
+
+                    background-color: variables.$color-1;
+                    border-radius: 0.5rem;
+                    border: 1px solid variables.$color-active;
+                }
             }
         }
     }
