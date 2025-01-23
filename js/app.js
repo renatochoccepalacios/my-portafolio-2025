@@ -51,7 +51,8 @@ function abrirContacto() {
     divFormulario.appendChild(mensaje);
     divFormulario.appendChild(buttonSubmit);
 
-
+// Deshabilitar el scroll del body
+body.style.overflow = 'hidden'; 
     // Aplica la clase de animación después de agregar el formulario al DOM
     setTimeout(() => {
         sectionContacto.classList.add('transition-active');
@@ -68,6 +69,9 @@ function abrirContacto() {
             sectionContacto.remove();
             contenedorContacto.removeEventListener('click', cerrarFormulario); // Desactivar el evento una vez cerrado el formulario
         }
+
+        body.style.overflow = 'auto'; // Habilitar scroll del body
+
     }
 
     // console.log(sectionContacto)
