@@ -67,7 +67,7 @@ body.style.overflow = 'hidden';
         // Verifica si se hace clic en el contenedor de contacto, pero no en el formulario
         if (event.target === sectionContacto) {
             sectionContacto.remove();
-        body.style.overflow = 'auto'; // Habilitar scroll del body
+            body.style.overflow = 'auto'; // Habilitar scroll del body
 
             contenedorContacto.removeEventListener('click', cerrarFormulario); // Desactivar el evento una vez cerrado el formulario
         }
