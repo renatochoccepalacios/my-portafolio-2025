@@ -233,6 +233,14 @@ fieldset {
     clip-path: inset(0 0 0 0);
   }
 }
+@keyframes wipe-in-left-reverse {
+  from {
+    clip-path: inset(0 0 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 100%);
+  }
+}
 .contacto-contenedor {
   position: absolute;
   min-height: 100vh;
@@ -250,6 +258,9 @@ fieldset {
 }
 .contacto-contenedor .section-contacto.transition-active {
   animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both;
+}
+.contacto-contenedor .section-contacto.transition-active-reverse {
+  animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left-reverse both;
 }
 .contacto-contenedor .section-contacto .formulario-contacto {
   background-color: #172340;

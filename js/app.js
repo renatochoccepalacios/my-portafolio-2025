@@ -56,7 +56,7 @@ body.style.overflow = 'hidden';
     // Aplica la clase de animación después de agregar el formulario al DOM
     setTimeout(() => {
         sectionContacto.classList.add('transition-active');
-    }, 1); // Pequeña demora para que el DOM se actualice
+    }, 0); // Pequeña demora para que el DOM se actualice
 
     // Aplica la animación después de que el formulario ha sido agregado al DOM
     sectionContacto.setAttribute('transition-style', 'in:wipe:left');
@@ -66,10 +66,12 @@ body.style.overflow = 'hidden';
     function cerrarFormulario(event) {
         // Verifica si se hace clic en el contenedor de contacto, pero no en el formulario
         if (event.target === sectionContacto) {
-            sectionContacto.remove();
+            sectionContacto.classList.add('transition-active-reverse');
             body.style.overflow = 'auto'; // Habilitar scroll del body
-
-            contenedorContacto.removeEventListener('click', cerrarFormulario); // Desactivar el evento una vez cerrado el formulario
+            setTimeout(() => {
+                sectionContacto.remove();
+                contenedorContacto.removeEventListener('click', cerrarFormulario); // Desactivar el evento una vez cerrado el formulario
+            }, 3500); // Ajusta el tiempo según la duración de tu animación
         }
 
 
