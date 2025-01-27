@@ -44,6 +44,7 @@
                             text-transform: uppercase;
                             letter-spacing: 2px;
                             color: variables.$color-white;
+                            cursor: pointer;
 
                             &.active {
                                 color: variables.$color-active;

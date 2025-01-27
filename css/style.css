@@ -93,6 +93,7 @@ fieldset {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #fff;
+  cursor: pointer;
 }
 .header-principal nav .nav-container div ul li .nav-link.active {
   color: #c3c3c3;

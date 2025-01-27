@@ -1,4 +1,6 @@
-
+(function () {
+    emailjs.init("PBKLlhpAZgZdmjDYx"); // Reemplaza con tu User ID de EmailJS
+})();
 
 const contactoButton = document.getElementById('contacto');
 const body = document.getElementById('body-principal');
@@ -11,7 +13,7 @@ function abrirContacto() {
         console.log('El formulario ya está abierto.');
         return;
     }
-    
+
     const form = document.createElement('form');
     const h2 = document.createElement('h2');
     const divFormulario = document.createElement('div');
@@ -24,7 +26,7 @@ function abrirContacto() {
 
     sectionContacto.classList = 'section-contacto';
     sectionContacto.id = 'section-contacto';
-    
+
 
     body.overflow = 'hidden'; // Deshabilitar scroll del body
     inputGmail.type = 'email';
@@ -34,9 +36,11 @@ function abrirContacto() {
     labelMensaje.textContent = 'Mensaje*';
     buttonSubmit.type = 'submit';
     buttonSubmit.textContent = 'Enviar';
+    buttonSubmit.id = 'btn-enviar-form';
 
     divFormulario.classList = 'formulario-inputs-contacto';
     form.classList = 'formulario-contacto';
+    form.id = 'formulario-contacto';
     mensaje.name = 'mensaje';
     mensaje.id = 'mensaje';
 
@@ -51,8 +55,8 @@ function abrirContacto() {
     divFormulario.appendChild(mensaje);
     divFormulario.appendChild(buttonSubmit);
 
-// Deshabilitar el scroll del body
-body.style.overflow = 'hidden'; 
+    // Deshabilitar el scroll del body
+    body.style.overflow = 'hidden';
     // Aplica la clase de animación después de agregar el formulario al DOM
     setTimeout(() => {
         sectionContacto.classList.add('transition-active');
@@ -77,5 +81,39 @@ body.style.overflow = 'hidden';
 
     }
 
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        enviarEmail();
+    });
+
     // console.log(sectionContacto)
+}
+
+
+function enviarEmail() {
+    const form = document.getElementById('formulario-contacto');
+    const gmail = form.querySelector('input[type="email"]').value;
+    const mensaje = form.querySelector('textarea').value;
+
+    if (!gmail || !mensaje) {
+        alert('Por favor, rellena todos los campos.');
+        return;
+    }
+
+    emailjs.send("service_s11iot6", "template_v660gcn", {
+        message: mensaje,
+        email_id: gmail,
+    }).then(function (response) {
+        console.log('SUCCESS!', response.status, response.text);
+        alert('Mensaje enviado correctamente.');
+    }, function (error) {
+        console.log('FAILED...', error);
+        alert('Ocurrió un error al enviar el mensaje.');
+    });
+
+    form.querySelector('input[type="email"]').value = '';
+    form.querySelector('textarea').value = '';
+    // Cerrar formulario después de enviar el mensaje
+    // document.getElementById('section-contacto').click();
+    
 }
