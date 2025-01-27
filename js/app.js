@@ -104,10 +104,10 @@ function enviarEmail() {
         message: mensaje,
         email_id: gmail,
     }).then(function (response) {
-        console.log('SUCCESS!', response.status, response.text);
+        // console.log('SUCCESS!', response.status, response.text);
         alert('Mensaje enviado correctamente.');
     }, function (error) {
-        console.log('FAILED...', error);
+        // console.log('FAILED...', error);
         alert('Ocurrió un error al enviar el mensaje.');
     });
 
