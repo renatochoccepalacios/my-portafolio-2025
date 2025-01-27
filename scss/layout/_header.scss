@@ -6,6 +6,11 @@
         background-color: variables.$color-1;
         margin: 0 auto;
         color: #fff;
+        box-shadow:
+            0 0 10px variables.$color-3-shadow,
+            0 0 20px variables.$color-3-shadow-secondary,
+            0 0 40px variables.$color-2,
+            0 0 80px variables.$color-2;
 
         .nav-container {
             // max-width: 1200px;
@@ -15,16 +20,18 @@
                 color: variables.$color-white;
 
             }
+
             .logo-a {
                 color: variables.$color-white;
 
             }
 
-         
+
 
             div {
                 max-width: 1200px;
                 margin: 0 auto;
+
                 .logo-a {
                     color: variables.$color-white;
                     display: none;
@@ -58,8 +65,8 @@
                     }
                 }
 
-                
-                
+
+
             }
 
             .button-cv {

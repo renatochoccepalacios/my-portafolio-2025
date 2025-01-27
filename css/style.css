@@ -61,6 +61,7 @@ fieldset {
   background-color: #0b193c;
   margin: 0 auto;
   color: #fff;
+  box-shadow: 0 0 10px #172340, 0 0 20px #1e1e73, 0 0 40px #1e1e73, 0 0 80px #1e1e73;
 }
 .header-principal nav .nav-container {
   padding: 0 2rem;
